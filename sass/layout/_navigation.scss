@@ -1,0 +1,86 @@
+/* Navbar change color on scroll */
+.navbar {
+    background: rgba($color-primary, .7);
+    transition: .5s ease;
+
+    @include respond(phone) {
+        background: rgba($color-primary, 1);
+    }
+}
+
+.navbar.scrolled {
+    background: rgba($color-primary, 1);
+}
+
+.navbar-brand {
+    font-size: 2rem !important;
+}
+
+.nav-item {
+
+    @include respond(phone) {
+        margin-left: 1rem;
+    } 
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.nav-link:hover {
+    opacity: .7;
+}
+
+/* Dropdown on hover for big screens */
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Hamburger Button */	
+.hamburger {
+    border: none;
+    background: transparent !important;
+
+    &:active,
+    &:focus {
+  	    border:none !important;
+        outline:none !important;
+    }
+
+    &__icon-bar {
+        width: 3.5rem; 
+        height: 3px;
+        background-color: white;
+        display: block;
+        transition: all 0.2s;
+        margin-top: .7rem;
+
+        &--top {
+            transform: rotate(45deg);
+            transform-origin: 10% 10%;
+        }
+
+        &--middle {
+            opacity: 0;
+        }
+
+        &--bottom {
+            transform: rotate(-45deg);
+            transform-origin: 10% 90%;
+        }
+    }
+
+    &.collapsed .hamburger__icon-bar--top {
+        transform: rotate(0);
+    }
+
+    &.collapsed .hamburger__icon-bar--middle {
+        opacity: 1;
+    }
+
+    &.collapsed .hamburger__icon-bar--bottom {
+        transform: rotate(0);
+    }
+}
+
+

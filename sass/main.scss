@@ -1,0 +1,17 @@
+@import "assets/mixins";
+@import "assets/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/home";
+
+@import "components/about";
+@import "components/blog";
+@import "components/contact";
+@import "components/departments";
+@import "components/doctors";
+@import "components/section-between";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";

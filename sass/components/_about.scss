@@ -1,0 +1,19 @@
+.about {
+	margin-top: 10rem;
+
+	&__box {
+		padding: 1rem;
+	}
+
+	&__icon {
+		font-size: 7rem;
+		display: block;
+		color: $color-primary;
+		text-align: center;
+	}
+
+	&__text {
+		text-align: justify;
+		font-size: 1.3rem;
+	}
+}

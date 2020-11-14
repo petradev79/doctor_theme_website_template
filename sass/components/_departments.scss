@@ -1,0 +1,41 @@
+.departments {
+	background: url('../img/img-departments.png');
+	background-position: top;
+	background-size: 60%;
+	background-repeat: no-repeat;
+
+	@include respond(tab-port) {
+		background: linear-gradient(
+			rgba($color-white, .7)),
+		    url('../img/img-departments.png');
+	}
+
+	@include respond(phone) {
+		background: $color-white;
+	}
+
+	@include respond(big-desktop) {
+		background-size: 65%;
+	}
+
+	&__box {
+		margin-bottom: 1rem;
+		padding: 2rem;
+		cursor: pointer;
+		transition: .5s ease;
+
+		&:hover {
+			background: linear-gradient(rgba($color-primary, 1));
+			color: $color-white;
+		}
+
+		&:hover h3 {
+			color: $color-white;
+		}
+	}
+
+	&__text {
+		text-align: justify;
+		font-size: 1.3rem;
+	}
+}

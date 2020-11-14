@@ -1,0 +1,33 @@
+.blog {
+	padding: 3rem;
+	background: linear-gradient(rgba($color-primary, .05));
+
+	@include respond(phone) {
+		padding: 3rem 1rem;
+	}
+
+	&__questions {
+		margin: 3rem;
+		padding: 2rem;
+		background: $color-white;
+
+		@include respond(phone) {
+			margin: 3rem 0;
+		}
+	}
+
+	&__text {
+		font-size: 1.2rem;
+	}
+
+	&__comments {
+		margin: 3rem;
+		margin-top: 8rem;
+		padding: 2rem;
+		background: $color-white;
+
+		@include respond(phone) {
+			margin: 3rem 0 0 0;
+		}
+	}
+}

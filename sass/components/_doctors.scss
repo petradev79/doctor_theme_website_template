@@ -1,0 +1,17 @@
+.doctors {
+
+	&__box {
+		padding: 1rem;
+	}
+
+	&__img {
+		width: 100%;
+		box-shadow: 0 2rem 4rem rgba($color-black, .4);
+	}
+
+	&__text {
+		text-align: center;
+		font-size: 1.5rem;
+		color: $color-primary;
+	}
+}

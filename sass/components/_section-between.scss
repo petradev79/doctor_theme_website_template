@@ -1,0 +1,23 @@
+.section-between {
+	background: linear-gradient( 
+		rgba($color-primary, .7)),
+	    url('../img/img-between.png');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+	&__number,
+	&__text {
+		color: $color-white;
+		text-align: center;
+		font-weight: 700;
+	}
+
+	&__number {
+		font-size: 5rem;
+	}
+
+	&__text {
+		font-size: 1.5rem;
+	}
+}

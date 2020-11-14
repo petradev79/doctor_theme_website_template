@@ -1,0 +1,81 @@
+.section-about {
+	padding: 10rem 0;
+
+	@include respond(tab-port) {
+		padding: 5rem 0;
+	}
+
+	h3 {
+		text-align: center;
+	}
+}
+
+.section-between {
+	padding: 15rem 0;
+
+	@include respond(tab-port) {
+		padding: 10rem 0;
+	}
+
+	h2 {
+		color: $color-white;
+	}
+
+	.long-copy {
+		color: $color-white;
+	}
+
+	.row>div:not(:last-child) {
+		border-right: 1px solid $color-white;
+
+		@include respond(tab-port) {
+			border-right: 1px solid transparent;
+		}
+	}
+}
+
+.section-departments {
+	padding: 10rem 0;
+
+	@include respond(tab-port) {
+		padding: 5rem 0;
+	}
+}
+
+.section-doctors {
+	padding: 10rem 0;
+	background: linear-gradient(rgba($color-text, .07));
+
+	@include respond(tab-port) {
+		padding: 5rem 0;
+	}
+
+	h3 {
+		text-align: center;
+	}
+}
+
+.section-blog {
+	padding: 10rem 0;
+
+	@include respond(tab-port) {
+		padding: 5rem 0;
+	}
+
+	.blog {
+
+		h2 {
+			font-size: 3rem;
+			color: $color-primary;
+		}
+	}
+}
+
+.section-contact {
+	padding: 10rem 0;
+	background: linear-gradient(rgba($color-text, .07));
+
+	@include respond(tab-port) {
+		padding: 5rem 0;
+	}
+}

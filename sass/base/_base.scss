@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;// 1rem = 10px
+	scroll-behavior: smooth;
+
+	@include respond(tab-land) {
+		font-size: 56.25%;
+	}
+
+	@include respond(tab-port) {
+		font-size: 55%;
+	}
+
+	@include respond(big-desktop) {
+		font-size: 70%;
+	}
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	line-height: 1.7;
+	color: $color-text;
+}
+
+/* ------ HEADINGS ------ */
+h1 {
+	font-weight: 700;
+	color: $color-primary;
+	font-size: 7rem;
+	word-spacing: 1rem;
+	letter-spacing: .3rem;
+	animation: moveInLeft 1s ease-out;
+
+	@include respond(phone) {
+		font-size: 4.5rem;
+		word-spacing: .5rem;
+	}
+}
+
+h2 {
+	font-size: 4rem;
+	font-weight: 700;
+	word-spacing: .5rem;
+	text-align: center;
+	color: $color-black;
+
+	@include respond(phone) {
+		font-size: 3rem;
+	}
+
+	span {
+		color: $color-primary;
+	}
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: 400;
+	color: $color-primary;
+	transition: .5s ease;
+}
+
+.long-copy {
+	margin: 0 auto;
+	width: 55%;
+	text-align: center;
+	font-size: 1.5rem;
+
+	@include respond(tab-port) {
+		width: 65%;
+	}
+
+	@include respond(phone) {
+		width: 95%;
+	}
+}
+
+/* ------ LINKS ------ */
+a:link,
+a:visited {
+	color: $color-white;
+	text-decoration: none;
+	letter-spacing: .1rem;
+	font-size: 1.5rem;
+	padding: 1rem;
+}
+
+/* ------ BUTTONS ------ */
+.btn:link,
+.btn:visited {
+	border: 1px solid blue;
+	display: inline-block;
+	padding: 1.5rem 2rem;
+	font-weight: 400;
+	border-radius: 3rem;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+	background-color: $color-primary;
+	border: 1px solid $color-primary;
+	color: $color-white;
+}
+
+.btn-full:active,
+.btn-full:hover {
+	background-color: transparent;
+	border: 1px solid $color-primary;
+	color: $color-primary;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+	background-color: transparent;
+	border: 1px solid $color-primary;
+	color: $color-primary;
+}
+
+.btn-ghost:active,
+.btn-ghost:hover {
+	background-color: $color-primary;
+	border: 1px solid $color-primary;
+	color: $color-white;
+}
+
+.btn-animated {
+	animation: fadeIn .5s 1.5s ease-out;
+	animation-fill-mode: backwards;
+}
